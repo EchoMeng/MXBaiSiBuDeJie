@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MXTagTableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="MXTagTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1g4-vs-7eH">
+                        <rect key="frame" x="10" y="10" width="60" height="59.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="6lI-wN-ACy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqc-51-V56">
+                        <rect key="frame" x="80" y="48.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erS-94-cVL">
+                        <rect key="frame" x="230" y="24" width="80" height="31"/>
+                        <state key="normal" title="订阅+" backgroundImage="tagButtonBG">
+                            <color key="titleColor" red="1" green="0.18149711669999999" blue="0.17816800890000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="tagButtonBGClick"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTC-ag-ovQ">
+                        <rect key="frame" x="80" y="10" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iqc-51-V56" firstAttribute="leading" secondItem="1g4-vs-7eH" secondAttribute="trailing" constant="10" id="H33-ZK-emd"/>
+                    <constraint firstItem="jTC-ag-ovQ" firstAttribute="leading" secondItem="1g4-vs-7eH" secondAttribute="trailing" constant="10" id="JaQ-Gh-wBm"/>
+                    <constraint firstItem="erS-94-cVL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Lvv-UC-QoH"/>
+                    <constraint firstAttribute="bottom" secondItem="1g4-vs-7eH" secondAttribute="bottom" constant="10" id="NoL-uf-MTF"/>
+                    <constraint firstItem="1g4-vs-7eH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eFj-tH-3gc"/>
+                    <constraint firstItem="jTC-ag-ovQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="iij-yl-0Wl"/>
+                    <constraint firstItem="1g4-vs-7eH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="nFa-ws-dQd"/>
+                    <constraint firstAttribute="trailing" secondItem="erS-94-cVL" secondAttribute="trailing" constant="10" id="qce-2V-3U8"/>
+                    <constraint firstAttribute="bottom" secondItem="iqc-51-V56" secondAttribute="bottom" constant="10" id="uc6-uY-NKV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="1g4-vs-7eH" id="ADX-sB-qXa"/>
+                <outlet property="nameLabel" destination="jTC-ag-ovQ" id="qbp-hY-sKK"/>
+                <outlet property="numLabel" destination="iqc-51-V56" id="SWR-gR-PdG"/>
+            </connections>
+            <point key="canvasLocation" x="90" y="0.0"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tagButtonBG" width="80" height="31"/>
+        <image name="tagButtonBGClick" width="80" height="31"/>
+    </resources>
+</document>

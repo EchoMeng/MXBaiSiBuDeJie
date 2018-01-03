@@ -1,0 +1,14 @@
+//
+//  MXMeCollectionViewCell.h
+//  BuDeJie
+//
+//  Created by mac on 2017/12/8.
+//  Copyright © 2017年 mac. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "MXSquareItem.h"
+
+@interface MXMeCollectionViewCell : UICollectionViewCell
+@property (strong,nonatomic)MXSquareItem *item;
+@end

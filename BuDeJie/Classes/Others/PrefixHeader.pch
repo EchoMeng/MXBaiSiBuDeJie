@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  BuDeJie
+//
+//  Created by mac on 2017/12/11.
+//  Copyright © 2017年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define TitleButtonDidRepeatClicked @"TitleButtonDidRepeatClicked"
+#define TabBatBtnRepeatedClick @"TabBatBtnRepeatedClick"
+#import "UIView+MXFrame.h"
+#endif /* PrefixHeader_pch */
